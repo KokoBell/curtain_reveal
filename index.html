@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtain Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body data-nav="false">
+    <main>
+    </main>
+    <nav>
+        <div id="nav-links">
+            <a class="nav-link" href="#">
+                <h2 class="nav-link-label">Home</h2>
+                <img class="nav-link-image" src="home.jpg" alt="">
+            </a>
+            <a class="nav-link" href="#">
+                <h2 class="nav-link-label">About</h2>
+                <img class="nav-link-image" src="about.jpg" alt="">
+            </a>
+            <a class="nav-link" href="#">
+                <h2 class="nav-link-label">Work</h2>
+                <img class="nav-link-image" src="work.jpg" alt="">
+            </a>
+            <a class="nav-link" href="#">
+                <h2 class="nav-link-label">Contact</h2>
+                <img class="nav-link-image" src="contact.jpg" alt="">
+            </a>
+        </div>
+    </nav>
+    <button id="nav-toggle" type="button" onclick="toggleNav()">
+        <i class="open fa-solid fa-bars-staggered"></i>
+        <i class="close fa-solid fa-xmark"></i>
+    </button>
+</body>
+
+<script>
+    const toggleNav = () => {
+        document.body.dataset.nav = document.body.dataset.nav === "true" ? "false" : "true"
+    }
+</script>
+
+</html>
